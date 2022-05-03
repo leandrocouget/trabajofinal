@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+	<!-- section get in touch start -->
+    <div class="touch_section">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-12">
+				    <h1 class="get_taital"><strong><span style="color: #ffffff;">Contactanos</span>  Ahora!</strong></h1>
+    			</div>
+    		</div>
+    		<div class="email_box">
+                    <div class="input_main">
+                       <div class="container">
+                          <form action="/action_page.php">
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Nombre" name="Name">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Telefono" name="Name">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Correo Electronico" name="Email">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea class="massage-bt" placeholder="Mensaje" rows="5" id="comment" name="Massage"></textarea>
+                            </div>
+                          </form>
+                       </div>
+                       <div class="send_btn">
+                        <button type="button" class="main_bt"><a href="#">Enviar</a></button>
+                       </div>
+                    </div>
+    		</div>
+    	</div>
+    </div>
+
+
+
+	{% endblock %}
