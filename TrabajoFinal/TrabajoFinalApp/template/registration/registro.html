@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../static/css/style.css">
+<!-- Responsive-->
+
+    <title>Registro de usuario</title>
+</head>
+<body>
+
+    <div class="login">
+
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <h2>Registro de Usuario</h2>
+                        <a href="/" style=" color: green;">inicio</a> |
+                        <a href="../../accounts/login" style=" color: green;">Login</a>
+                        <hr>
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            {{form}}
+
+
+                            <input type="submit" value="Registrar" class="btn btn-success float-right">
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
