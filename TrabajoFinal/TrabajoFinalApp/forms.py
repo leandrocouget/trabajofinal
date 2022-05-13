@@ -5,7 +5,7 @@ from .models import contacto
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 
-class ContactoForm(ModelForm):
+class ContactoForm(forms.ModelForm):
     class Meta:
         model = contacto
         fields = ('nombre', 'telefono', 'email', 'mensaje')
